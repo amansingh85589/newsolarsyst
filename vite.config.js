@@ -1,7 +1,7 @@
 export default {
     root: 'src/',
     publicDir: '../static/',
-    base: '/newsolarsyst/',   // <-- match your repo name exactly, with trailing slash
+    base: process.env.VERCEL ? '/' : '/newsolarsyst/',  // <-- match your repo name exactly, with trailing slash
     server:
     {
         host: true,
